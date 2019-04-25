@@ -1,13 +1,15 @@
 # DeepRec
-In this repository, we implement many recent deep learning based recommendation models with Tensorflow.
+In this repository, a number of deep learning based recommendation models are implemented using Python and Tensorflow. 
+We started this project in the hope that it would reduce the efforts of researchers and developers in reproducing state-of-the-art methods. The implemented models cover three major recommendation scenarios: rating prediction, top-N recommendation (i.e., item ranking) and sequential recommendation. Meanwhile, DeepRec maintains good modularity and extensibility for easy incorporation of new models into this framework. DeepRec is distributed under the GNU General Public License.
 
-# Implemented Algorithms
+
+# Algorithms Implemented
 We implemented both rating estimation, top-n recommendation models and sequence-aware recommendation models.
 * I-AutoRec and U-AutoRec (www'15)
 * CDAE (WSDM'16)
 * NeuMF (WWW'17)
 * CML (WWW'17)
-* LRML (WWW'18) (DRAFT ONLY, testing will come soon)
+* LRML (WWW'18) (DRAFT version)
 * NFM (SIGIR'17)
 * NNMF (arxiv)
 * PRME (IJCAI 2015)
@@ -15,20 +17,20 @@ We implemented both rating estimation, top-n recommendation models and sequence-
 * AttRec (AAAI 2019 RecNLP)
 and so on.
 
-You can run this code from Test/test_item_ranking.py, Test/test_rating_pred.py, or Test/testSeqRec.py
+To use the code, run: Test/test_item_ranking.py, Test/test_rating_pred.py, or Test/testSeqRec.py
 
 # Requirements
 * Tensorflow 1.7+, Python 3.5+, numpy, scipy, sklearn, pandas
 
-# To do
-* Add more models
-* Different Evaluation Protocals
-* Code Refactor
+# ToDo List
+* More deep-learning based models
+* Alternative evaluation protocols
+* Code refactoring
+* Update to Tensorflow 2.0
 
 # Citation
 
-To acknowledge use of this open source package in publications, please cite the
-following paper:
+To acknowledge use of this open source package in publications, please cite either of the following papers:
 
 ```
 @article{zhang2019deeprec,
@@ -36,15 +38,22 @@ following paper:
   author={Zhang, Shuai and Yao, Lina and Sun, Aixin and Tay, Yi},
   journal={ACM Computing Surveys (CSUR)},
   volume={52},
-  number={1},
-  pages={5},
   year={2019},
   publisher={ACM}
 }
 ```
-Thank you for your support!!!
-
-Contributions and issues are always welcome. You can also contact me via email: cheungshuai@outlook.com
+or 
+```
+ @inproceedings{shuai2019deeprec,
+   title={DeepRec: An Open-source Toolkit for Deep Learning based Recommendation},
+   author={Shuai Zhang, Yi Tay, Lina Yao, Bin Wu, Aixin Sun},
+   booktitle={Preprint},
+   year={2019}
+ }
+```
+Thank you for your support!
 
 # Collaborators
+Details of the developers can be found as follows.
+
 [Shuai Zhang](https://sites.google.com/view/shuaizhang/home), [Yi Tay](https://sites.google.com/view/yitay/home), [Bin Wu](https://wubinzzu.github.io/)
